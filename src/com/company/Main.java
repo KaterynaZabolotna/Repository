@@ -1,74 +1,72 @@
 package com.company;
 
-
 public class Main {
 
-      public static int getMonthNumber(String month) {
+    public static int getMonthNumber(String month) {
 
-         int monthNumber = 0;
+        int monthNumber = 0;
 
-         if (month == null) {
+        if (month == null) {
             return monthNumber;
-         }
+        }
 
-         switch (month.toLowerCase()) {
+        switch (month.toLowerCase()) {
             case "january":
-               monthNumber = 1;
-               break;
+                monthNumber = 1;
+                break;
             case "february":
-               monthNumber = 2;
-               break;
+                monthNumber = 2;
+                break;
             case "march":
-               monthNumber = 3;
-               break;
+                monthNumber = 3;
+                break;
             case "april":
-               monthNumber = 4;
-               break;
+                monthNumber = 4;
+                break;
             case "may":
-               monthNumber = 5;
-               break;
+                monthNumber = 5;
+                break;
             case "june":
-               monthNumber = 6;
-               break;
+                monthNumber = 6;
+                break;
             case "july":
-               monthNumber = 7;
-               break;
+                monthNumber = 7;
+                break;
             case "august":
-               monthNumber = 8;
-               break;
+                monthNumber = 8;
+                break;
             case "september":
-               monthNumber = 9;
-               break;
+                monthNumber = 9;
+                break;
             case "october":
-               monthNumber = 10;
-               break;
+                monthNumber = 10;
+                break;
             case "november":
-               monthNumber = 11;
-               break;
+                monthNumber = 11;
+                break;
             case "december":
-               monthNumber = 12;
-               break;
+                monthNumber = 12;
+                break;
             default:
-               monthNumber = 0;
-               break;
-         }
+                monthNumber = 0;
+                break;
+        }
 
-         return monthNumber;
-      }
+        return monthNumber;
+    }
 
-      public static void main(String[] args) {
+    public static void main(String[] args) {
 
-         String month = "August";
+        String month = "August";
 
-         int returnedMonthNumber =
-                 Main.getMonthNumber(month);
+        int returnedMonthNumber = Main.getMonthNumber(month);
 
-         if (returnedMonthNumber == 0) {
+        if (returnedMonthNumber == 0) {
             System.out.println("Invalid month");
-         } else {
+        } else {
             System.out.println(returnedMonthNumber);
-         }
-      }
-   }
+        }
+    }
+}
 
 
