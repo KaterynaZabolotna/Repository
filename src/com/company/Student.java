@@ -1,11 +1,14 @@
 package com.company;
 
 public class Student extends CatDog {
+
     int course = 1;
-    public Student (int height , String name , int course){
-    super(height, name);
-    this.course = course;
+
+    public Student(int height, String name, int course) {
+        super(height, name);
+        this.course = course;
     }
+
     void tell() {
         System.out.println(super.height);
         System.out.println(super.name);
